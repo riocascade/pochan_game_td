@@ -3324,9 +3324,9 @@ d},Unpin(){this._SetPinInst(null);this._mode="";this._propSet.clear();this._pinI
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.System.Exps.choose,
 		C3.Plugins.System.Acts.SetLayerScale,
-		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
@@ -3401,6 +3401,7 @@ d},Unpin(){this._SetPinInst(null);this._mode="";this._propSet.clear();this._pinI
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.TextBox.Acts.SetY,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
+		C3.Plugins.TextBox.Acts.SetElemAttribute,
 		C3.Plugins.Browser.Exps.ExecJS,
 		C3.Plugins.List.Acts.Clear,
 		C3.Plugins.List.Acts.AddItem,
@@ -4033,6 +4034,7 @@ d},Unpin(){this._SetPinInst(null);this._mode="";this._propSet.clear();this._pinI
 			const v2 = p._GetNode(2).GetVar();
 			return () => f0(n1.ExpObject(v2.GetValue()), 0, "|");
 		},
+		() => "tutorial",
 		() => 1,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -4082,7 +4084,6 @@ d},Unpin(){this._SetPinInst(null);this._mode="";this._propSet.clear();this._pinI
 		() => "play",
 		() => "playing",
 		() => "gt25",
-		() => "tutorial",
 		() => "player_name",
 		() => "cpu_name",
 		() => "player atk",
@@ -4337,6 +4338,8 @@ d},Unpin(){this._SetPinInst(null);this._mode="";this._propSet.clear();this._pinI
 		() => "outline",
 		() => "font-size",
 		() => "large",
+		() => "maxlength",
+		() => "10",
 		() => "spin",
 		() => "watchAd",
 		() => "change name",
@@ -4485,12 +4488,14 @@ d},Unpin(){this._SetPinInst(null);this._mode="";this._propSet.clear();this._pinI
 		() => "white",
 		() => "solid",
 		() => "player name",
+		() => "100%",
 		() => 10000,
 		() => "language label",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject(38);
 		},
+		() => -500,
 		() => "language",
 		() => "settings",
 		() => "ticket",
